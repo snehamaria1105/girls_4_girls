@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffeef8 0%, #ffe4f1 50%, #ffd6eb 100%);
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.header {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  font-family: 'Brush Script MT', cursive;
+  background: linear-gradient(135deg, #ff6ba9 0%, #ff8dc7 100%);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(255, 107, 169, 0.3);
+  position: relative;
+  top: 0;
+  z-index: 100;
+  letter-spacing: 2px;
+}
+
+.page {
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ========== BUTTONS ========== */
+
+button {
+  background: linear-gradient(135deg, #ff6ba9 0%, #ff8dc7 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 169, 0.3);
+  font-family: 'Quicksand', sans-serif;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 169, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Avatar selection buttons */
+.page button[onclick^="selectAvatar"] {
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  margin: 8px;
+  background: white;
+  border: 3px solid #ffd6eb;
+  transition: all 0.3s ease;
+}
+
+.page button[onclick^="selectAvatar"]:hover {
+  border-color: #ff6ba9;
+  transform: scale(1.1);
+}
+
+/* ========== INPUTS ========== */
+
+input[type="text"],
+input[type="date"],
+textarea,
+input::placeholder {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 18px;
+  border: 2px solid #ffd6eb;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  background: white;
+  transition: all 0.3s ease;
+  outline: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff6ba9;
+  box-shadow: 0 0 0 3px rgba(255, 107, 169, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  display: block;
+  margin: 10px auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffb3d9;
+}
+
+/* ========== POST CONTAINER ========== */
+
+#postsContainer > div {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 15px rgba(255, 107, 169, 0.15);
+  transition: transform 0.2s ease;
+}
+
+#postsContainer > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(255, 107, 169, 0.2);
+}
+
+#postsContainer p {
+  margin: 10px 0;
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+
+#postsContainer b {
+  color: #ff6ba9;
+  font-weight: 600;
+}
+
+/* Post action buttons */
+#postsContainer button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Comments section */
+div[id^="commentsBox-"] {
+  background: #fff5fa;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+div[id^="commentsBox-"] input {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+div[id^="commentsBox-"] button {
+  margin-top: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+/* ========== HR ========== */
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ffd6eb, transparent);
+  margin: 15px 0;
+}
+
+/* ========== MOOD TRACKER ========== */
+
+.page > div[style*="display:flex"] > div {
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 3px 12px rgba(255, 107, 169, 0.15);
+  transition: all 0.3s ease;
+  min-width: 80px;
+}
+
+.page > div[style*="display:flex"] > div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(255, 107, 169, 0.25);
+  background: linear-gradient(135deg, #fff5fa 0%, #ffe4f1 100%);
+}
+
+#moodSuggestion {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 15px rgba(255, 107, 169, 0.15);
+  line-height: 1.8;
+  color: #5a5a5a;
+}
+
+#moodSuggestion strong {
+  color: #ff6ba9;
+}
+
+/* ========== CALENDAR ========== */
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(255, 107, 169, 0.15);
+}
+
+.day {
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+  color: #5a5a5a;
+  background: #fff5fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: #ffe4f1;
+  transform: scale(1.05);
+}
+
+.today {
+  border: 3px solid #ff6ba9;
+  background: white;
+  box-shadow: 0 3px 12px rgba(255, 107, 169, 0.3);
+}
+
+.period {
+  background: linear-gradient(135deg, #ff6ba9 0%, #ff8dc7 100%);
+  color: white;
+  box-shadow: 0 3px 12px rgba(255, 107, 169, 0.4);
+}
+
+.predicted {
+  background: #ffdbeb;
+  color: #ff6ba9;
+  border: 2px dashed #ff6ba9;
+  font-weight: 700;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(255, 107, 169, 0.15);
+  font-weight: 700;
+  color: #ff6ba9;
+  font-size: 18px;
+}
+
+.calendar-header button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+/* Period predictions and phase info */
+#prediction,
+#phase,
+#periodResult {
+  background: white;
+  padding: 18px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: 0 3px 15px rgba(255, 107, 169, 0.15);
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+#periodResult strong,
+#phase strong {
+  color: #ff6ba9;
+}
+
+/* ========== NAVIGATION BAR ========== */
+
+div[style*="position:fixed"] {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background: white !important;
+  border-top: none !important;
+  box-shadow: 0 -3px 20px rgba(255, 107, 169, 0.2) !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  padding: 12px !important;
+  z-index: 1000;
+}
+
+div[style*="position:fixed"] button {
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  background: linear-gradient(135deg, #fff5fa 0%, #ffe4f1 100%);
+  border: 2px solid #ffd6eb;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(255, 107, 169, 0.2);
+}
+
+div[style*="position:fixed"] button:hover {
+  background: linear-gradient(135deg, #ff6ba9 0%, #ff8dc7 100%);
+  border-color: #ff6ba9;
+  transform: scale(1.1);
+}
+
+/* ========== HEADINGS ========== */
+
+h3 {
+  color: #ff6ba9;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ========== PROFILE PAGE ========== */
+
+#userPosts {
+  margin-top: 20px;
+}
+
+#userPosts p {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 12px rgba(255, 107, 169, 0.15);
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+
+#postCount {
+  color: #ff6ba9;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* ========== ANIMATIONS ========== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page {
+  animation: fadeIn 0.4s ease;
+}
+
+/* ========== SCROLLBAR ========== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff5fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff6ba9 0%, #ff8dc7 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ff5a9d 0%, #ff7dbb 100%);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 36px;
+    padding: 15px;
+  }
+  
+  .page {
+    padding: 15px;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+  div[style*="position:fixed"] button {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
