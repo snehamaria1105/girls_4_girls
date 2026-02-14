@@ -1,0 +1,33 @@
+<!-- welcome.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      background: #cd7da6;
+    }
+    img {
+      cursor: pointer;
+      max-width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+    
+  <img src="welcome page.jpeg" alt="Click to Enter" onclick="redirectToHome()">
+  <script>
+    function redirectToHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
