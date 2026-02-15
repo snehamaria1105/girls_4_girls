@@ -104,12 +104,14 @@ Shows user's profile.
 
 **System Architecture:**
 
+
 <img width="425" height="572" alt="Screenshot 2026-02-15 221602" src="https://github.com/user-attachments/assets/64ab4eda-0b3f-40f5-b2ff-74b1a87195df" />
 
 
 **Application Workflow:**
 
-<img width="703" height="706" alt="Screenshot 2026-02-15 221223" src="https://github.com/user-attachments/assets/9fc50804-7178-467c-9937-1167339dacd3" />
+
+<img width="686" height="690" alt="Screenshot 2026-02-15 221916" src="https://github.com/user-attachments/assets/992e826d-f86d-4113-9c9c-083f7174ae70" />
 
 
 ---
