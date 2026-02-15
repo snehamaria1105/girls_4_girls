@@ -111,7 +111,7 @@ Shows user's profile.
 **Application Workflow:**
 
 
-<img width="686" height="690" alt="Screenshot 2026-02-15 221916" src="https://github.com/user-attachments/assets/992e826d-f86d-4113-9c9c-083f7174ae70" />
+<img width="686" height="690" alt="Screenshot 2026-02-15 221916" src="https://github.com/user-attachments/assets/24778908-46f9-4080-bbf0-7d2034d266ab" />
 
 
 ---
