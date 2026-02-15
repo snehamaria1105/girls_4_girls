@@ -59,16 +59,19 @@ List the key features of your project:
 #### Screenshots (Add at least 3)
 
 Screenshot 1: Welcome page
+
 ![welcome page](https://github.com/user-attachments/assets/27d41387-3267-41b2-8b1b-e3d017aedfdf)
 
 
 Screenshot 2: Login Page 
 User can login using a username and an avatar.
+
 <img width="1919" height="876" alt="login" src="https://github.com/user-attachments/assets/7ef23a26-8659-4a9d-8e2c-23e29d15ae54" />
 
 
 Screenshot 3: Home page 
 Users can see others' posts, comment on it, like it. Users can also share a post.
+
 <img width="1919" height="869" alt="home" src="https://github.com/user-attachments/assets/1d97bc36-ce09-4f70-a202-2cb286fe63c5" />
 
 
@@ -79,6 +82,7 @@ Shows the posts and its reactions.
 
 Screenshot 5: Mood Tracking page
 User selects current mood and system suggest some activities based on their mood, to uplift them.
+
 <img width="1919" height="871" alt="mood" src="https://github.com/user-attachments/assets/a4108a41-dc7a-4a32-b1b4-f35b4ec31aa8" />
 
 <img width="1919" height="865" alt="mood(2)" src="https://github.com/user-attachments/assets/1a2ef37b-e6bb-43bc-8c79-e0625c15c0af" />
@@ -86,11 +90,13 @@ User selects current mood and system suggest some activities based on their mood
 
 Screenshot 6: Period Tracker page
 User select the last period date and system automatically predicts next period date and also current menstural phase and what it means.
+
 <img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/6e63f80f-2f60-413e-82a3-538dbf75dd26" />
 
 
 Screenshot 7: Profile page
 Shows user's profile.
+
 <img width="1919" height="868" alt="profile" src="https://github.com/user-attachments/assets/d0d6189f-0597-4c0c-99c0-9453f43f99d4" />
 
 
@@ -111,6 +117,11 @@ Shows user's profile.
 ## Project Demo
 
 ### Video
+
+
+https://github.com/user-attachments/assets/caf09c81-92c6-444c-b723-55b496e9f859
+
+
 
 
 This video shows the basic flow of the website
